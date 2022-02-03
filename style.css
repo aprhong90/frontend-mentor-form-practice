@@ -1,0 +1,126 @@
+body,
+h1,
+p,
+div,
+form {
+  margin: 0;
+}
+
+body {
+  background-image: url("images/bg-intro-mobile.png");
+  background-color: hsl(0, 100%, 74%);
+  color: white;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: "Poppins", sans-serif;
+}
+
+header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  margin: 50px 0;
+  width: 80%;
+}
+
+header h1 {
+  padding-bottom: 20px;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100vw;
+}
+
+.banner {
+  background-color: hsl(248, 32%, 49%);
+  padding: 20px 0;
+  width: 90%;
+  text-align: center;
+  border-radius: 15px;
+}
+
+.banner a {
+  text-decoration: none;
+  color: white;
+}
+
+.accent-text {
+  font-weight: 600;
+}
+
+.form-container {
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 30px;
+  width: 90%;
+  border-radius: 15px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 20px;
+  width: 90%;
+}
+
+form input,
+button {
+  width: 80%;
+  padding: 20px;
+  margin: 10px;
+  border-radius: 10px;
+  border: 1px solid rgb(194, 192, 192);
+}
+
+button {
+  background-color: hsl(154, 59%, 51%);
+  width: 90%;
+  text-decoration: none;
+  color: white;
+  font-weight: 500;
+  font-size: 15px;
+}
+button:hover {
+  background-color: hsl(154, 54%, 67%);
+}
+
+.text-container {
+  color: hsl(246, 25%, 77%);
+  width: 90%;
+  text-align: center;
+  font-size: 10px;
+  padding-bottom: 20px;
+}
+
+.text-container span {
+  color: hsl(0, 100%, 74%);
+  font-weight: 600;
+}
+
+@media only screen and (min-width: 1000px) {
+  body {
+    flex-direction: row;
+  }
+
+  header {
+    padding: 0 100px;
+  }
+  main {
+    padding-right: 100px;
+  }
+
+  header {
+    text-align: left;
+  }
+  /* don't have to specify like: header h1, header p ?!*/
+}
+/* don't know how to make a link in button */
